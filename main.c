@@ -1,10 +1,14 @@
-#include <stdio.h>
+'''#include <stdio.h>
 
 int main() {
     int n;
     int i, j;
 
     scanf_s("%d", &n);
+
+    if (n < 3 || n % 2 == 0) {
+        return 0;
+    }
 
     for (i = 0; i <= n / 2; i++) {
         for (j = 0; j < i; j++) {
@@ -31,4 +35,4 @@ int main() {
     }
 
     return 0;
-}
+}'''
